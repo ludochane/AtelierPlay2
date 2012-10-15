@@ -1,0 +1,4 @@
+task=tâche
+tasks.add=Ajouter une nouvelle tâche
+Create=Créer
+Delete=Supprimer

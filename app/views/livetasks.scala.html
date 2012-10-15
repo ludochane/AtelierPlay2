@@ -1,0 +1,18 @@
+@main("Live Tasks") {
+  <h1>Live tasks</h1>
+
+  <script>
+    var updateTasks = function(tasks) {
+      $('#tasks').empty();
+      for (var i = 0; i < tasks.length; i++) {
+        $('#tasks').append("<li>" + tasks[i].label + "</li>");
+      }
+    };
+  </script>
+
+  <ul id="tasks">
+
+  </ul>
+
+  <iframe id="comet" src="@routes.Application.updateLiveTasks" style="display:none;"></iframe>
+}
